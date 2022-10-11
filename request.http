@@ -1,0 +1,26 @@
+POST http://localhost:4002/products
+Content-Type: application/json
+
+{
+  "name": "Mouse RGB",
+  "price": 290
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+GET http://localhost:4002/products/a66e59d0-d7b3-4673-aa70-58aab01c7c8f
+
+###
+PUT http://localhost:4002/products/a66e59d0-d7b3-4673-aa70-58aab01c7c8f
+Content-Type: application/json
+
+{
+  "name": "Monitor LG",
+  "price": 1.890
+}
+
+###
+DELETE http://localhost:4002/products/a66e59d0-d7b3-4673-aa70-58aab01c7c8f
